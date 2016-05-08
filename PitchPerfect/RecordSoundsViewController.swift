@@ -40,11 +40,15 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate
         let filePath = NSURL.fileURLWithPathComponents(pathArray);
         print (filePath);
         
+        //Initiate the Audio Session
         let session = AVAudioSession.sharedInstance();
         try! session.setCategory(AVAudioSessionCategoryPlayAndRecord);
         
         try! audioRecorder = AVAudioRecorder(URL:filePath!, settings: [:]);
+        
+        //Set the delegate of Audio Recorder to self.
         audioRecorder.delegate = self;
+        
         audioRecorder.meteringEnabled = true;
         audioRecorder.prepareToRecord();
         audioRecorder.record();

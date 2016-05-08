@@ -86,7 +86,7 @@
                                                     <action selector="playSoundForButton:" destination="c56-oa-k9K" eventType="touchUpInside" id="UP7-av-xj4"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfC-9c-iDN" userLabel="RabbitButton">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfC-9c-iDN" userLabel="RabbitButton">
                                                 <rect key="frame" x="280" y="0.0" width="280" height="130"/>
                                                 <state key="normal" image="RabbitButton"/>
                                                 <connections>
@@ -98,14 +98,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OzZ-uh-GeA">
                                         <rect key="frame" x="0.0" y="130" width="560" height="130"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJB-IY-d7N" userLabel="ChipmunkButton">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJB-IY-d7N" userLabel="ChipmunkButton">
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="130"/>
                                                 <state key="normal" image="ChipmunkButton"/>
                                                 <connections>
                                                     <action selector="playSoundForButton:" destination="c56-oa-k9K" eventType="touchUpInside" id="ywd-l0-dQ1"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="weD-c0-xlr" userLabel="DarthvaderButton">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="weD-c0-xlr" userLabel="DarthvaderButton">
                                                 <rect key="frame" x="280" y="0.0" width="280" height="130"/>
                                                 <state key="normal" image="DarthvaderButton"/>
                                                 <connections>
@@ -117,14 +117,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dN2-hE-lbF">
                                         <rect key="frame" x="0.0" y="260" width="560" height="130"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3OM-TR-UQs" userLabel="EchoButton">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3OM-TR-UQs" userLabel="EchoButton">
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="130"/>
                                                 <state key="normal" image="EchoButton"/>
                                                 <connections>
                                                     <action selector="playSoundForButton:" destination="c56-oa-k9K" eventType="touchUpInside" id="3fw-Iy-6Qd"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6F-hQ-WyR" userLabel="ReverbButton">
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6F-hQ-WyR" userLabel="ReverbButton">
                                                 <rect key="frame" x="280" y="0.0" width="280" height="130"/>
                                                 <state key="normal" image="ReverbButton"/>
                                                 <connections>
@@ -158,12 +158,12 @@
                     </view>
                     <connections>
                         <outlet property="chipmunkButton" destination="QJB-IY-d7N" id="YH5-eC-7JL"/>
-                        <outlet property="darthVaderButton" destination="weD-c0-xlr" id="R1l-kB-vKy"/>
                         <outlet property="echoButton" destination="3OM-TR-UQs" id="19D-u7-2Do"/>
                         <outlet property="rabbitButton" destination="DfC-9c-iDN" id="52H-nT-JYs"/>
                         <outlet property="reverbButton" destination="Z6F-hQ-WyR" id="zVA-u9-aCn"/>
                         <outlet property="snailButton" destination="doM-3n-OJO" id="0io-Gr-TSg"/>
                         <outlet property="stopButton" destination="PKN-6D-DS7" id="Q8R-SX-1al"/>
+                        <outlet property="vaderButton" destination="weD-c0-xlr" id="kPI-av-jNe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ANq-6C-d1a" userLabel="First Responder" sceneMemberID="firstResponder"/>
