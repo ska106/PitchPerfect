@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class PlaySoundsViewController: UIViewController {
 
@@ -18,11 +19,20 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var reverbButton:UIButton!;
     @IBOutlet weak var stopButton:UIButton!;
     
+    var recordedAudioURL: NSURL!;
+    var audioFile: AVAudioFile!;
+    var audioEngine: AVAudioEngine!;
+    var audioPlayerNode: AVAudioPlayerNode!;
+    var stopTimer : NSTimer;
+    
+    enum ButtonType: Int(case Slow = 0 , Fast ,Chipmunk,Vader,Echo,Reverb);
+    
     var recordedAudioURL:NSURL!;
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("PlaySoundViewController loaded.");
+        setupAudio();
         // Do any additional setup after loading the view.
     }
 
@@ -41,6 +51,8 @@ class PlaySoundsViewController: UIViewController {
         print("Stop Audio Button Pressed.");
     }
 
+    
+    
     /*
     // MARK: - Navigation
 
