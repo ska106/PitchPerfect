@@ -23,7 +23,7 @@ class PlaySoundsViewController : UIViewController {
     var audioFile: AVAudioFile!;
     var audioEngine: AVAudioEngine!;
     var audioPlayerNode: AVAudioPlayerNode!;
-    var stopTimer : NSTimer;
+    var stopTimer : NSTimer!;
     
     enum ButtonType: Int{case Slow = 0 , Fast ,Chipmunk,Vader,Echo,Reverb};
     
