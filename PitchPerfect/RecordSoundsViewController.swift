@@ -53,7 +53,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate
 
     @IBAction func stopRecording(sender: AnyObject)
     {
-        stopRecordingButton.enabled = false
         recordingLabel.text="Tap to Record"
         stopRecordingButton.enabled = false
         recordButton.enabled = true
@@ -67,7 +66,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate
         print("AVAudio Recorder finished saving the recording.")
         if (flag)
         {
-            self.performSegueWithIdentifier("stopRecording", sender: audioRecorder.url)
+            performSegueWithIdentifier("stopRecording", sender: audioRecorder.url)
         }
         else
         {
