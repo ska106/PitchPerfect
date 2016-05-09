@@ -29,17 +29,12 @@ class PlaySoundsViewController : UIViewController {
     
     var recordedAudioURL:NSURL!
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         print("PlaySoundViewController loaded.")
         setupAudio()
         // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func viewWillAppear(animated: Bool)
@@ -65,6 +60,7 @@ class PlaySoundsViewController : UIViewController {
     @IBAction func stopButtonPressed(sender: AnyObject)
     {
         print("Stop Audio Button Pressed.")
+        stopAudio()
     }
 
     /*
