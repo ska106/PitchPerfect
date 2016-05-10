@@ -19,20 +19,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h18-oV-BOE">
-                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <rect key="frame" x="250" y="182" width="100" height="100"/>
                                 <state key="normal" image="recordButton"/>
                                 <connections>
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VY9-py-5Qf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7L-e5-cU6">
-                                <rect key="frame" x="246" y="390" width="107" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7L-e5-cU6">
+                                <rect key="frame" x="246" y="290" width="107" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8da-9f-fSw">
-                                <rect key="frame" x="274.5" y="450" width="50" height="50"/>
+                                <rect key="frame" x="275" y="318" width="50" height="50"/>
                                 <state key="normal" image="stopButton"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4zH-1d-Vid"/>
@@ -41,12 +41,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="8da-9f-fSw" firstAttribute="top" secondItem="v7L-e5-cU6" secondAttribute="bottom" constant="39.5" id="C6Q-4n-ky3"/>
-                            <constraint firstItem="v7L-e5-cU6" firstAttribute="top" secondItem="h18-oV-BOE" secondAttribute="bottom" constant="40" id="FHS-a9-PJn"/>
-                            <constraint firstItem="h18-oV-BOE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SeS-bm-7h6"/>
-                            <constraint firstItem="v7L-e5-cU6" firstAttribute="centerX" secondItem="h18-oV-BOE" secondAttribute="centerX" id="iL6-R7-ltS"/>
-                            <constraint firstItem="h18-oV-BOE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pul-cp-eyl"/>
-                            <constraint firstItem="8da-9f-fSw" firstAttribute="centerX" secondItem="v7L-e5-cU6" secondAttribute="centerX" id="s2p-bi-Eij"/>
+                            <constraint firstItem="v7L-e5-cU6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="I64-dx-isD"/>
+                            <constraint firstItem="8da-9f-fSw" firstAttribute="top" secondItem="v7L-e5-cU6" secondAttribute="bottom" constant="7.5" id="XRZ-u2-5Y9"/>
+                            <constraint firstItem="v7L-e5-cU6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y7j-sV-K5i"/>
+                            <constraint firstItem="8da-9f-fSw" firstAttribute="centerX" secondItem="v7L-e5-cU6" secondAttribute="centerX" id="Zbo-DE-sv2"/>
+                            <constraint firstItem="v7L-e5-cU6" firstAttribute="top" secondItem="h18-oV-BOE" secondAttribute="bottom" constant="8" id="gO8-aM-krj"/>
+                            <constraint firstItem="h18-oV-BOE" firstAttribute="centerX" secondItem="v7L-e5-cU6" secondAttribute="centerX" id="j2v-nU-gfO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uBI-l3-6y3"/>
